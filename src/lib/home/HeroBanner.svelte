@@ -1,4 +1,84 @@
 <script lang="ts">
+	 import Particles from "svelte-particles";
+
+	 let particlesUrl = "http://foo.bar/particles.json";
+
+	let particlesConfig = {
+		particles: {
+    "number": {
+      "value": 60,
+      "density": {
+        "enable": true,
+        "value_area": 700
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+	};
+
+	let onParticlesLoaded = (event) => {
+		const particlesContainer = event.detail.particles;
+
+		// you can use particlesContainer to call all the Container class
+		// (from the core library) methods like play, pause, refresh, start, stop
+	};
+
+	let onParticlesInit = (main) => {
+		// you can use main to customize the tsParticles instance adding presets or custom shapes
+	};
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
@@ -6,7 +86,14 @@
 <div
 	class="relative bg-cover bg-center bg-hero-banner lg:bg-hero-banner overflow-hidden md:h-screen/2 lg:h-screen "
 >
+
 	<div class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full" aria-hidden="true">
+		<Particles
+				id="tsparticles"
+				options="{particlesConfig}"
+				on:particlesLoaded="{onParticlesLoaded}"
+				on:particlesInit="{onParticlesInit}"
+			  />
 		<!-- <div class="relative h-full max-w-7xl mx-auto">
 			<svg
 				class="absolute right-full transform translate-y-1/4 translate-x-1/4 lg:translate-x-1/2"
@@ -54,8 +141,9 @@
 	</div>
 
 	<div class="relative pt-6 pb-16 sm:pb-24">
-		<div>
+		<div class="sticky top-0 z-50">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6">
+
 				<nav
 					class="relative flex items-center justify-between sm:h-10 md:justify-center"
 					aria-label="Global"
@@ -64,6 +152,7 @@
 						<div class="flex items-center justify-between w-full md:w-auto">
 							<a href="#">
 								<span class="sr-only">Workflow</span>
+
 								<img class="h-16 w-auto sm:h-20" src="flaming-tranparent.png" alt="" />
 							</a>
 							<div class="-mr-2 flex items-center md:hidden">
@@ -189,7 +278,7 @@
 			</div>
 		</div>
 
-		<main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
+		<main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-190">
 			<div class="text-center">
 				<!-- <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
 					<span class="block xl:inline text-white">TAKE PRODUCTION TO DIGITALIZATION</span>
@@ -202,7 +291,7 @@
 				<div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
 					<div class="rounded-md shadow">
 						<a
-							href="#"
+              href="#googlemap"
 							class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
 						>
 							Get in touch

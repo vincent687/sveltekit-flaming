@@ -1,9 +1,9 @@
-<div class="relative bg-gray-lightest">
+<div class="relative bg-gray-light">
 	<div class="lg:absolute lg:inset-0">
 		<div class="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
 			<img
-				class="h-56 w-full object-cover lg:absolute lg:h-full"
-				src="flamier_profolio_3b-09.jpg"
+				class="h-56 ml-24 w-10/12 object-cover lg:absolute lg:h-full"
+				src="flamier_profolio_3b-09.jpeg"
 				alt=""
 			/>
 		</div>
@@ -34,7 +34,7 @@
 				</div>
 			</div>
 			<!-- This example requires Tailwind CSS v2.0+ -->
-			<div class="bg-gray-lightest">
+			<div class="bg-gray-light">
 				<div class="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
 					<div class="space-y-8 sm:space-y-12">
 						<div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">

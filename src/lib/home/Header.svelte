@@ -3,7 +3,7 @@
 	import logo from './svelte-logo.svg';
 </script>
 
-<header>
+<header >
 	<div class="corner">
 		<a href="https://kit.svelte.dev">
 			<img src={logo} alt="SvelteKit" />

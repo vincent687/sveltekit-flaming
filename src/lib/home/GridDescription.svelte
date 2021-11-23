@@ -164,7 +164,7 @@
 	y="0"
 	><polygon
 		class="text-blueGray-200 fill-current"
-		style="fill: red;"
+		style="fill: #ef444b;"
 		points="2560 0 2560 100 0 100"
 	/></svg
 >

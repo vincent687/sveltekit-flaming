@@ -4,12 +4,12 @@
 
 <script lang="ts">
 	import Counter from '$lib/Counter/index.svelte';
-	import HeroBanner from '$lib/HeroBanner/index.svelte';
-	import ColumnCard from '$lib/ColumnCard/index.svelte';
-	import AboutUs from '$lib/AboutUs/index.svelte';
-	import Description from '$lib/Description/index.svelte';
-	import GridDescription from '$lib/GridDescription/index.svelte';
-	import Map from '$lib/Map/index.svelte';
+	import HeroBanner from '$lib/home/HeroBanner.svelte';
+	import ColumnCard from '$lib/home/ColumnCard.svelte';
+	import AboutUs from '$lib/home/AboutUs.svelte';
+	import Description from '$lib/home/Description.svelte';
+	import GridDescription from '$lib/home/GridDescription.svelte';
+	import Map from '$lib/home/Map.svelte';
 	let hereKitty = false;
 
 	const handleMouseenter = () => (hereKitty = true);
@@ -22,13 +22,16 @@
 
 <svelte:body on:mouseenter={handleMouseenter} on:mouseleave={handleMouseleave} />
 
-<section>
+<section class="relative">
+
 	<HeroBanner />
 	<ColumnCard />
 	<AboutUs />
 	<Description />
 	<GridDescription />
 	<Map />
+
+
 	<!-- <h1>
 		<div class="welcome">
 			<picture>
