@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Header from '$lib/Home/Header.svelte';
   import HeadNavigation from '$lib/Global/HeadNavigation.svelte';
   import { fly } from 'svelte/transition';
 	import '../app.css';
