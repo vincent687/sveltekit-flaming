@@ -2,26 +2,27 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="/favicon.png" />
+		<link rel="icon" href="/favicon.jpeg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-		<title>Home</title>
+     
+		<title>Flaming Partners Limited</title><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" data-svelte="svelte-1o6auma"></script><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT1QdxV5dTu0kz3KyXiKyUPCIyo6gvTZE&sensor=false" data-svelte="svelte-1o6auma"></script>
 
 		
 
-		<link rel="modulepreload" href="/./_app/start-62d986fb.js">
-		<link rel="modulepreload" href="/./_app/chunks/vendor-2f7c43bc.js">
-		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-176944a0.js">
-		<link rel="modulepreload" href="/./_app/pages/index.svelte-02afcd2e.js">
-		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
-		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-d4883a00.css">
-		<link rel="stylesheet" href="/./_app/assets/pages/index.svelte-078f1a0b.css">
+		<link rel="modulepreload" href="/_app/start-b4056af0.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-e1f3104b.js">
+		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-10f3d915.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-12efc045.js">
+		<link rel="stylesheet" href="/_app/assets/start-d5b4de3e.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-ae3218ad.css">
+		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-bf08a2c7.css">
 
 		<script type="module">
-			import { start } from "/./_app/start-62d986fb.js";
+			import { start } from "/_app/start-b4056af0.js";
 			start({
 				target: document.querySelector("#svelte"),
-				paths: {"base":"","assets":"/."},
+				paths: {"base":"","assets":""},
 				session: {},
 				host: location.host,
 				route: true,
@@ -31,8 +32,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/./_app/pages/__layout.svelte-176944a0.js"),
-						import("/./_app/pages/index.svelte-02afcd2e.js")
+						import("/_app/pages/__layout.svelte-10f3d915.js"),
+						import("/_app/pages/index.svelte-12efc045.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -44,46 +45,217 @@
 			});
 		</script>
 	</head>
-	<body>
+	<body style="overflow-y: hidden">
 		<div id="svelte">
 
 
-<header class="svelte-1twf6mk"><div class="corner svelte-1twf6mk"><a href="https://kit.svelte.dev" class="svelte-1twf6mk"><img src="/_app/assets/svelte-logo.87df40b8.svg" alt="SvelteKit" class="svelte-1twf6mk"></a></div>
 
-	<nav class="svelte-1twf6mk"><svg viewBox="0 0 2 3" aria-hidden="true" class="svelte-1twf6mk"><path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" class="svelte-1twf6mk"></path></svg>
-<ul class="svelte-1twf6mk"><li class="svelte-1twf6mk active"><a sveltekit:prefetch href="/" class="svelte-1twf6mk">Home</a></li>
-	<li class="svelte-1twf6mk"><a sveltekit:prefetch href="/about" class="svelte-1twf6mk">About</a></li>
-	<li class="svelte-1twf6mk"><a sveltekit:prefetch href="/todos" class="svelte-1twf6mk">Todos</a></li></ul>
-<svg viewBox="0 0 2 3" aria-hidden="true" class="svelte-1twf6mk"><path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" class="svelte-1twf6mk"></path></svg></nav>
 
-	<div class="corner svelte-1twf6mk"></div>
-</header>
 
-<main class="svelte-1izrdc8">
+<div class="flex flex-col h-screen"><div class="fixed -top-52 w-full svelte-kr2520"><header class="py-5 gray-light text-white text-center bg-black-light"><div class="max-w-7xl mx-auto px-4 sm:px-6"><nav class="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global"><div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0"><div class="flex items-center justify-between w-full md:w-auto"><img class="h-28 w-auto sm:h-20" src="flaming-tranparent.png" alt="">
+            </div></div>
+        <div class="hidden md:flex md:space-x-10"><a href="#home" class="text-xl font-medium text-gray-500 hover:text-gray-900">Home</a>
 
-<section class="svelte-mjk9ig"><h1 class="svelte-mjk9ig"><div class="welcome svelte-mjk9ig"><picture><source srcset="svelte-welcome.webp" type="image/webp">
-		<img src="svelte-welcome.png" alt="Welcome" class="svelte-mjk9ig"></picture></div>
+          <a href="#about" class="text-xl font-medium text-gray-500 hover:text-gray-900">About</a>
 
-to your new<br>SvelteKit app
-	</h1>
+          <a href="#service" class="text-xl font-medium text-gray-500 hover:text-gray-900">Service</a>
 
-	<h2>try editing <strong>src/routes/index.svelte</strong></h2>
+          </div></nav></div></header></div>
+  
 
-	<div class="counter svelte-ltn89m"><button aria-label="Decrease the counter by one" class="svelte-ltn89m"><svg aria-hidden="true" viewBox="0 0 1 1" class="svelte-ltn89m"><path d="M0,0.5 L1,0.5" class="svelte-ltn89m"></path></svg></button>
 
-	<div class="counter-viewport svelte-ltn89m"><div class="counter-digits svelte-ltn89m" style="transform: translate(0, 0%)"><strong style="top: -100%" aria-hidden="true" class="svelte-ltn89m">1</strong>
-	<strong class="svelte-ltn89m">0</strong></div></div>
+  
 
-	<button aria-label="Increase the counter by one" class="svelte-ltn89m"><svg aria-hidden="true" viewBox="0 0 1 1" class="svelte-ltn89m"><path d="M0,0.5 L1,0.5 M0.5,0 L0.5,1" class="svelte-ltn89m"></path></svg></button>
-</div>
-</section></main>
+	<main class="flex-1 overflow-y-auto">
 
-<footer class="svelte-1izrdc8"><p>visit <a href="https://kit.svelte.dev" class="svelte-1izrdc8">kit.svelte.dev</a> to learn SvelteKit</p>
+
+
+<section class="relative">
+
+
+
+<div id="home" class="bg-fixed items-center justify-center h-screen mb-12 relative bg-cover bg-center bg-hero-banner lg:bg-hero-banner overflow-hidden md:h-screen/2 lg:h-screen "><div class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full" aria-hidden="true">
+		</div>
+
+	<div class="relative pt-6 pb-16 sm:pb-24"><div class="sticky top-0 z-50"><div class="max-w-7xl mx-auto px-4 sm:px-6"><nav class="relative flex items-center justify-between sm:h-20 md:justify-center" aria-label="Global"><div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0"><div class="flex items-center justify-between w-full md:w-auto"><img class="h-44 w-auto sm:h-20" src="flaming-tranparent.png" alt="">
+							
+							<div class="-mr-2 flex items-center md:hidden"><button type="button" class="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false"><span class="sr-only">Open main menu</span>
+									
+									<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div></div></div>
+					<div class="hidden md:flex md:space-x-10"><a href="#home" class="text-xl font-medium text-gray-500 hover:text-gray-900">Home</a>
+
+						<a href="#about" class="text-xl font-medium text-gray-500 hover:text-gray-900">About</a>
+
+						<a href="#service" class="text-xl font-medium text-gray-500 hover:text-gray-900">Service</a>
+
+						</div>
+					</nav></div>
+
+			
+
+			<div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"><div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"><div class="px-5 pt-4 flex items-center justify-between"><div><img class="h-16 w-auto" src="flaming-tranparent.png" alt=""></div>
+						<div class="-mr-2"><button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"><span class="sr-only">Close menu</span>
+								
+								<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button></div></div>
+					<div class="px-2 pt-2 pb-3"><a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
+
+						<a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
+
+						<a href="#service" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Service</a></div>
+					</div></div></div>
+
+		<main class="mt-16 mx-auto max-w-7xl px-4 ss:mt-190"><div class="text-center">
+
+        
+				<div class="ss:-mt-24 mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-60 lg:mt-190"><div class="rounded-md shadow"><a href="#googlemap" class=" rounded-full bg-opacity-0  border-white w-full flex items-center justify-center px-8 py-3  border text-base font-medium  text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">Get in touch
+						</a></div>
+					</div></div></main></div></div>
+	
+<div class="relative bg-gray-lightest2 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8"><div class="absolute inset-0"><div class="bg-white h-1/3 sm:h-2/3"></div></div>
+	<div class="relative max-w-7xl mx-auto"><div class="text-center"><h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">Take production to digitalization
+			</h2>
+			<p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">All-in-one production management system
+			</p></div>
+		<div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none"><div class="flex flex-col rounded-lg shadow-lg overflow-hidden"><div class="flex-shrink-0"><img class="h-48 w-full object-cover" src="nokia.jpeg" alt=""></div>
+				<div class="flex-1 bg-white p-6 flex flex-col justify-between"><div class="flex-1"><p class="text-sm font-medium text-indigo-600"><span>May 31, 2019 Flamier </span></p>
+						<a href="#" class="block mt-2"><p class="text-xl font-semibold text-gray-900">Winning of the patent of Nokia!</p>
+							<p class="mt-3 text-base text-gray-500">Flaming has won the patent of Nokia (Patent no. US9235268) which involved the
+								virtual interactive workspace technology.
+							</p></a></div>
+					<div class="mt-6 flex items-center"><div class="ml-3"><p class="text-sm font-medium text-gray-900"><spna>For Detail: </spna></p>
+							<div class="flex space-x-1 text-sm text-gray-500"><a href="#" class="hover:underline">https://patents.google.com/patent/US9235268B2/en</a></div></div></div></div></div>
+
+			<div class="flex flex-col rounded-lg shadow-lg overflow-hidden"><div class="flex-shrink-0"><img class="h-48 w-full object-cover" src="logo-cyberport.jpg" alt=""></div>
+				<div class="flex-1 bg-white p-6 flex flex-col justify-between"><div class="flex-1"><p class="text-sm font-medium text-indigo-600">30 Oct 2019 Flamier</p>
+						<p class="mt-3 text-base text-gray-500">We are a member of Cyberport Incubation Programme.
+						</p></div>
+					</div></div>
+
+			</div></div></div>
+	<div id="about" class="relative bg-gray-lightest2"><div class="lg:absolute lg:inset-0"><div class="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2"><img class="h-56 ml-24 w-10/12 object-cover lg:absolute lg:h-full" src="flamier_profolio_3b-09.jpeg" alt=""></div></div>
+	<div class="relative pt-12 pb-16 px-4 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2"><div class="lg:col-start-2 lg:pl-8"><div class="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0"><h2 class="leading-6 text-indigo-600 font-semibold tracking-wide uppercase">ABOUT</h2>
+				<h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Flaming Partners
+				</h3>
+				<div class="mt-5 prose prose-indigo text-gray-500"><p>developed the first Production Management System (PMS) with app support in the present
+						Chinese production market. In the present production process, all the scheduling, list
+						of props and customes and calculation of labour are all done traditionally by man-power
+						which will use up unnesscessary time and resources, especially in printing materials.
+						With the use of our PMS, we aim to improve the production workflow in communication,
+						security and information sharing. Our system can safe time, man-power and most
+						importantly the cost for production. It also achieve eco friendly purpose. We would like
+						to emphasis our PMS is developed by experienced senior television producer and
+						programmer. With this being said, it is almost impossible to be replicated or replaced
+						by another system. Our strategy is to focus on our functionality and user friendly
+						compatibility development in order to stay on top of the market.
+					</p></div></div>
+			
+			<div class="bg-gray-lightest2"><div class="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24"><div class="space-y-8 sm:space-y-12"><div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl"><h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl text-gray-600">Founder &amp; CEO</h2>
+							<p class="text-xl text-gray-500">Lincoln Lam</p></div>
+						<ul class="mx-auto grid  gap-x-4 gap-y-8   md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12"><li><div class="space-y-4"><img class="mx-auto h-28 w-28 rounded-full lg:w-28 lg:h-28" src="profile_img.jpg" alt="">
+									<div>Producer for Television Broadcasts Limited (TVB) for 8 years. An expert in drama
+										series and movie productions. He wrote the entire logic and create information
+										linkage of the system foundation. A visionary who have the network and know how
+										to bring the industry into digitalizatio.
+									</div>
+									</div></li>
+
+							</ul></div></div></div></div></div></div>
+	
+
+<svg class="absolute overflow-hidden bg-gray-lightest2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0"><polygon class="text-blueGray-200 fill-current" style="fill: white;" points="2560 0 2560 100 0 100"></polygon></svg>
+<div id="service" class="flex flex-wrap items-center bg-white"><div class="w-full mt-32 md:w-5/12 px-4 mr-auto ml-auto"><div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blueGray-50"><i class="fas fa-user-friends text-xl"></i></div>
+
+		<h3 class="text-3xl mb-2 font-semibold leading-normal text-gray-600">OBJECTIVES</h3>
+		<h2 class="text-2xl">Flaming Partners targets</h2>
+		<p class="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">to be the biggest online Production Management System in the Chinese market. Since we
+			are the only company who provide this service in the market now, it will be widely accepted
+			because it is a necessity for the industry to merge with technology. Our system will have a
+			positive significant impact to the workflow in production process.
+		</p></div>
+	<div class="w-full md:w-4/12 ml-auto mr-auto px-4  mb-12"></div></div>
+
+
+<div class="flex flex-wrap items-center bg-white"><div class=" mx-auto px-4 "><div class="items-center flex flex-wrap"><div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+				</div>
+			<div class="w-full md:w-5/12 ml-auto mr-auto px-4"><div class="md:pr-12"><div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300"><i class="fas fa-rocket text-xl"></i></div>
+					<h3 class="text-3xl font-semibold text-gray-600">APPLICATION</h3>
+					<h2 class="text-2xl">We are an online Production Management System [PMS]</h2>
+					<p class="mt-4 text-lg leading-relaxed ">with app support. Our service cover the entire process of production shoot from
+						pre-production to post-production by project. We will create an individual secure
+						project for each production. From creating the story, the script will enter into our
+						system and it can automatically generate scene breakdown information for production use.
+						We designed a central database store in cloud to save all information in a production.
+						We provide realtime information upates and our system can send notifications to all
+						production member at the same time. The information stored can be review anytime,
+						anywhere will a computer or a moblie device. With our system, the production can
+						significantly reduce cost in printing matierials because everything can be view online.
+						PMS can lead the industry to become more enviromental friendly.
+					</p></div></div></div></div></div>
+	
+<div class="bg-white overflow-hidden"><div class="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8"><svg class="absolute top-0 left-full transform -translate-x-1/2 -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true"><defs><pattern id="8b1b5f72-e944-4457-af67-0c6d15a99f38" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"></rect></pattern></defs><rect width="404" height="784" fill="url(#8b1b5f72-e944-4457-af67-0c6d15a99f38)"></rect></svg>
+
+		<div class="relative lg:grid lg:grid-cols-3 lg:gap-x-8"><div class="lg:col-span-1"><h3>OUR SERVICES</h3>
+				<h3 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Pre-production to Post-production
+				</h3>
+				<h4 class="mt-4">Our service cover the entire process of production shoot from pre-production to
+					post-production by project
+				</h4></div>
+			<dl class="flex w-190 mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2 svelte-1r0eqwt"><div class="svelte-1r0eqwt"><dt><div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-light text-white"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+							</div>
+						<p class="mt-5 text-lg leading-6 font-medium text-gray-900">Story</p></dt>
+					<dd class="mt-2 text-base text-gray-500">We will create an individual secure project for each production from creating the story.
+					</dd>
+				</div><div class="svelte-1r0eqwt"><dt><div class="flex items-center justify-center h-12 w-12 rounded-md bg-pink-light text-white">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg></div>
+						<p class="mt-5 text-lg leading-6 font-medium text-gray-900">Script</p></dt>
+					<dd class="mt-2 text-base text-gray-500">The script will enter into system and automatically generate scene breakdown information
+						for production use.
+					</dd>
+				</div><div class="svelte-1r0eqwt"><dt><div class="flex items-center justify-center h-12 w-12 rounded-md bg-red-light text-white">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg></div>
+						<p class="mt-5 text-lg leading-6 font-medium text-gray-900">Cloud</p></dt>
+					<dd class="mt-2 text-base text-gray-500">We designed a central database store in cloud to save all information in a production.
+					</dd>
+				</div><div class="svelte-1r0eqwt"><dt><div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-light text-white">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd"></path></svg></div>
+						<p class="mt-5 text-lg leading-6 font-medium text-gray-900">Realtime</p></dt>
+					<dd class="mt-2 text-base text-gray-500">The information stored can be review anytime, anywhere will a computer or a moblie
+						device.
+					</dd></div></dl></div></div></div>
+
+<svg class="absolute overflow-hidden bg-white" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0"><polygon class="text-blueGray-200 fill-current" style="fill: #ef444b;" points="2560 0 2560 100 0 100"></polygon></svg>
+	<div id="googlemap" class=" mx-auto px-4 lg:pt-24 lg:pb-64 bg-red"><div class="flex flex-wrap text-center justify-center"><div class="w-full lg:w-6/12 px-4 mt-8"><h2 class="text-4xl font-semibold text-white ">Contact Information</h2>
+			</div></div>
+	<div class="flex flex-wrap mt-12 justify-center"><div class="w-full lg:w-3/12 px-4 text-center"><h6 class="text-xl mt-5 font-semibold text-white">Address</h6>
+			<p class="mt-2 mb-4 text-blueGray-400">1511B Cable TV Tower, 9 Hoi Shing Road, Tsuen Wan, New Territories
+			</p></div>
+		<div class="w-full lg:w-3/12 px-4 text-center"><h5 class="text-xl mt-5 font-semibold text-white">Email</h5>
+			<p class="mt-2 mb-4 text-blueGray-400">sales@flamingpartners.com.hk</p></div>
+		<div class="w-full lg:w-3/12 px-4 text-center"><h5 class="text-xl mt-5 font-semibold text-white">Website</h5>
+			<p class="mt-2 mb-4 text-blueGray-400">www.flamingpartners.com.hk</p></div></div></div>
+
+<div class="placeDiv svelte-tah0mz"><div class="placecard__container svelte-tah0mz"><div class="placecard__left svelte-tah0mz"><p class="placecard__business-name svelte-tah0mz">柴灣角海盛路9號有線電視大樓</p>
+      
+      <a class="placecard__view-large svelte-tah0mz" target="_blank" href="https://www.google.com/maps?ll=22.372764,114.107426&z=17&t=m&hl=zh-TW≷=HK&mapclient=embed&q=%E6%9C%89%E7%B7%9A%E9%9B%BB%E8%A6%96%E5%A4%A7%E6%A8%93+%E6%9F%B4%E7%81%A3%E8%A7%92%E6%B5%B7%E7%9B%9B%E8%B7%AF9%E8%99%9F" id="A_41">View larger map</a></div> 
+
+    <div class="placecard__right svelte-tah0mz"><a class="placecard__direction-link svelte-tah0mz" target="_blank" href="https://www.google.com/maps?ll=22.372764,114.107426&z=17&t=m&hl=zh-TW≷=HK&mapclient=embed&q=%E6%9C%89%E7%B7%9A%E9%9B%BB%E8%A6%96%E5%A4%A7%E6%A8%93+%E6%9F%B4%E7%81%A3%E8%A7%92%E6%B5%B7%E7%9B%9B%E8%B7%AF9%E8%99%9F" id="A_9"><div class="placecard__direction-icon svelte-tah0mz"></div>
+            Directions
+        </a></div> </div> </div> 
+<div class="full-screen svelte-tah0mz"></div>
+
+
+	
+
+	</section></main></div>
+
+
+
+<footer><p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
 </footer>
 
 
 
-	
-</div>
+			
+		</div>
 	</body>
 </html>
