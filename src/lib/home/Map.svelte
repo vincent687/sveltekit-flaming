@@ -10,7 +10,7 @@
     let uluru = { lat: 22.372997089908722,  lng:  114.10724114323592 };
 	onMount(async () => {
 		if (!import.meta.env.SSR) {
-			// debugger;
+	
 			const map = new google.maps.Map(container, {
 				zoom,
 				center,

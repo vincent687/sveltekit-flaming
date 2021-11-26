@@ -1,4 +1,4 @@
-<div class="relative bg-gray-light">
+<div id="about" class="relative bg-gray-lightest2">
 	<div class="lg:absolute lg:inset-0">
 		<div class="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
 			<img
@@ -11,7 +11,7 @@
 	<div
 		class="relative pt-12 pb-16 px-4 sm:pt-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2"
 	>
-		<div class="lg:col-start-2 lg:pl-8">
+		<div  class="lg:col-start-2 lg:pl-8">
 			<div class="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0">
 				<h2 class="leading-6 text-indigo-600 font-semibold tracking-wide uppercase">ABOUT</h2>
 				<h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -34,11 +34,11 @@
 				</div>
 			</div>
 			<!-- This example requires Tailwind CSS v2.0+ -->
-			<div class="bg-gray-light">
+			<div class="bg-gray-lightest2">
 				<div class="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
 					<div class="space-y-8 sm:space-y-12">
 						<div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
-							<h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Founder & CEO</h2>
+							<h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl text-gray-600">Founder & CEO</h2>
 							<p class="text-xl text-gray-500">Lincoln Lam</p>
 						</div>
 						<ul
@@ -47,7 +47,7 @@
 							<li>
 								<div class="space-y-4">
 									<img
-										class="mx-auto h-12 w-12 rounded-full lg:w-12 lg:h-12"
+										class="mx-auto h-28 w-28 rounded-full lg:w-28 lg:h-28"
 										src="profile_img.jpg"
 										alt=""
 									/>

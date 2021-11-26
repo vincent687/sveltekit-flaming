@@ -4,12 +4,12 @@
 
 <script lang="ts">
 	import Counter from '$lib/Counter/index.svelte';
-	import HeroBanner from '$lib/home/HeroBanner.svelte';
-	import ColumnCard from '$lib/home/ColumnCard.svelte';
-	import AboutUs from '$lib/home/AboutUs.svelte';
-	import Description from '$lib/home/Description.svelte';
-	import GridDescription from '$lib/home/GridDescription.svelte';
-	import Map from '$lib/home/Map.svelte';
+	import HeroBanner from '$lib/Home/HeroBanner.svelte';
+	import ColumnCard from '$lib/Home/ColumnCard.svelte';
+	import AboutUs from '$lib/Home/AboutUs.svelte';
+	import Description from '$lib/Home/Description.svelte';
+	import GridDescription from '$lib/Home/GridDescription.svelte';
+	import Map from '$lib/Home/Map.svelte';
 	let hereKitty = false;
 
 	const handleMouseenter = () => (hereKitty = true);
@@ -17,7 +17,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Flaming Partners Limited</title>
 </svelte:head>
 
 <svelte:body on:mouseenter={handleMouseenter} on:mouseleave={handleMouseleave} />

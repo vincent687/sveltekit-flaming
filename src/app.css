@@ -26,6 +26,7 @@ body {
 		var(--secondary-color) 10.45%,
 		var(--tertiary-color) 41.35%
 	);
+	color: #8b8b92;
 }
 
 body::before {
@@ -54,7 +55,8 @@ h1,
 h2,
 p {
 	font-weight: 400;
-	color: var(--heading-color);
+	color: #8b8b92;
+	/* color: var(--heading-color); */
 }
 
 p {

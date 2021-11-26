@@ -1,4 +1,4 @@
-<header class="py-5 gray-light text-white text-center bg-white">
+<header class="py-5 gray-light text-white text-center bg-black-light">
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <nav
@@ -7,20 +7,21 @@
 				>
         <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
           <div class="flex items-center justify-between w-full md:w-auto">
-            <a href="#">
+            <img class="h-28 w-auto sm:h-20" src="flaming-tranparent.png" alt="" />
+            <!-- <a href="#">
               <span class="sr-only">Workflow</span>
 
-              <img class="h-16 w-auto sm:h-20" src="flaming-tranparent.png" alt="" />
-            </a>
+              <img class="h-28 w-auto sm:h-20" src="flaming-tranparent.png" alt="" />
+            </a> -->
 
           </div>
         </div>
         <div class="hidden md:flex md:space-x-10">
-          <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Home</a>
+          <a href="#home" class="text-xl font-medium text-gray-500 hover:text-gray-900">Home</a>
 
-          <a href="#" class="font-medium text-gray-500 hover:text-gray-900">About</a>
+          <a href="#about" class="text-xl font-medium text-gray-500 hover:text-gray-900">About</a>
 
-          <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Service</a>
+          <a href="#service" class="text-xl font-medium text-gray-500 hover:text-gray-900">Service</a>
 
           <!-- <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a> -->
         </div>

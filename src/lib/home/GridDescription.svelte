@@ -28,15 +28,15 @@
 			<div class="lg:col-span-1">
 				<h3>OUR SERVICES</h3>
 				<h3 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-					We are an online Production Management System [PMS] with app support
+					Pre-production to Post-production
 				</h3>
-				<h4>
+				<h4 class="mt-4">
 					Our service cover the entire process of production shoot from pre-production to
 					post-production by project
 				</h4>
 			</div>
 			<dl
-				class="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2"
+				class="flex w-190 mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2"
 			>
 				<div>
 					<dt>
@@ -168,3 +168,10 @@
 		points="2560 0 2560 100 0 100"
 	/></svg
 >
+
+
+<style>
+  .space-y-10 > :not([hidden]) ~ :not([hidden]){
+    margin-top:0px !important;
+  }
+</style>

@@ -1,5 +1,16 @@
 <script lang="ts">
-	 import Particles from "svelte-particles";
+   import { onMount } from "svelte";
+
+    let ParticlesComponent;
+
+    onMount(async () => {
+      const module = await import("svelte-particles");
+
+      ParticlesComponent = module.default;
+
+    });
+
+	//  import Particles from "svelte-particles";
 
 	 let particlesUrl = "http://foo.bar/particles.json";
 
@@ -81,14 +92,18 @@
 	};
 </script>
 
+
 <!-- This example requires Tailwind CSS v2.0+ -->
 <!-- <div class="relative bg-gray-50 overflow-hidden bg-hero-banner bg-gradient-to-t"> -->
-<div
-	class="relative bg-cover bg-center bg-hero-banner lg:bg-hero-banner overflow-hidden md:h-screen/2 lg:h-screen "
+
+
+<div id="home"
+	class="bg-fixed items-center justify-center h-screen mb-12 relative bg-cover bg-center bg-hero-banner lg:bg-hero-banner overflow-hidden md:h-screen/2 lg:h-screen "
 >
 
 	<div class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full" aria-hidden="true">
-		<Particles
+		<svelte:component
+    this="{ParticlesComponent}"
 				id="tsparticles"
 				options="{particlesConfig}"
 				on:particlesLoaded="{onParticlesLoaded}"
@@ -145,16 +160,17 @@
 			<div class="max-w-7xl mx-auto px-4 sm:px-6">
 
 				<nav
-					class="relative flex items-center justify-between sm:h-10 md:justify-center"
+					class="relative flex items-center justify-between sm:h-20 md:justify-center"
 					aria-label="Global"
 				>
 					<div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
 						<div class="flex items-center justify-between w-full md:w-auto">
-							<a href="#">
+              <img class="h-44 w-auto sm:h-20" src="flaming-tranparent.png" alt="" />
+							<!-- <a href="#">
 								<span class="sr-only">Workflow</span>
 
-								<img class="h-16 w-auto sm:h-20" src="flaming-tranparent.png" alt="" />
-							</a>
+								<img class="h-44 w-auto sm:h-20" src="flaming-tranparent.png" alt="" />
+							</a> -->
 							<div class="-mr-2 flex items-center md:hidden">
 								<button
 									type="button"
@@ -183,15 +199,15 @@
 						</div>
 					</div>
 					<div class="hidden md:flex md:space-x-10">
-						<a href="#" class="font-medium text-gray-500 hover:text-gray-900">Home</a>
+						<a href="#home" class="text-xl font-medium text-gray-500 hover:text-gray-900">Home</a>
 
-						<a href="#" class="font-medium text-gray-500 hover:text-gray-900">About</a>
+						<a href="#about" class="text-xl font-medium text-gray-500 hover:text-gray-900">About</a>
 
-						<a href="#" class="font-medium text-gray-500 hover:text-gray-900">Service</a>
+						<a href="#service" class="text-xl font-medium text-gray-500 hover:text-gray-900">Service</a>
 
 						<!-- <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a> -->
 					</div>
-					<div
+					<!-- <div
 						class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0"
 					>
 						<span class="inline-flex rounded-md shadow">
@@ -202,7 +218,7 @@
 								Log in
 							</a>
 						</span>
-					</div>
+					</div> -->
 				</nav>
 			</div>
 
@@ -216,6 +232,7 @@
           From: "opacity-100 scale-100"
           To: "opacity-0 scale-95"
       -->
+
 			<div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
 				<div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
 					<div class="px-5 pt-4 flex items-center justify-between">
@@ -249,37 +266,37 @@
 					</div>
 					<div class="px-2 pt-2 pb-3">
 						<a
-							href="#"
+							href="#home"
 							class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
 							>Home</a
 						>
 
 						<a
-							href="#"
+							href="#about"
 							class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
 							>About</a
 						>
 
 						<a
-							href="#"
+							href="#service"
 							class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
 							>Service</a
 						>
 
-						>
 					</div>
-					<a
+					<!-- <a
 						href="#"
 						class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
 					>
 						Log in
-					</a>
+					</a> -->
 				</div>
 			</div>
 		</div>
 
-		<main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-190">
+		<main class="mt-16 mx-auto max-w-7xl px-4 ss:mt-190">
 			<div class="text-center">
+
 				<!-- <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
 					<span class="block xl:inline text-white">TAKE PRODUCTION TO DIGITALIZATION</span>
 				</h1>
@@ -288,11 +305,16 @@
 				>
 					all-in-one production management system
 				</p> -->
-				<div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+
+        <!-- border-radius: 36px;
+    border: white solid 1px;
+    /* opacity: 0.5; */
+    background-color: transparent; -->
+				<div class="ss:-mt-24 mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-60 lg:mt-190">
 					<div class="rounded-md shadow">
 						<a
               href="#googlemap"
-							class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+							class=" rounded-full bg-opacity-0  border-white w-full flex items-center justify-center px-8 py-3  border text-base font-medium  text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
 						>
 							Get in touch
 						</a>
