@@ -39,8 +39,8 @@
     "cookie": "^0.4.1",
     "encoding": "^0.1.13",
     "jquery": "^3.6.0",
-    "node-sass": "^4.14.1",
     "sass": "^1.42.1",
+    "sass-loader": "^12.3.0",
     "svelte-particles": "^1.18.4"
   }
 }
