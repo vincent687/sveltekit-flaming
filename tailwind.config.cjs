@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {
 			backgroundImage: (theme) => ({
-				'hero-banner': 'url(flamier_profolio_3b-20.jpg)'
+				'hero-banner': 'url(./static/flamier_profolio_3b-20.jpg)'
 			}),
 			height: (theme) => ({
 				screen: '100vh',
